@@ -11,6 +11,7 @@ export const AboutUs = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
         >
           <h2 className="font-semibold">Sobre nós</h2>
           <div className="border-4 w-14 border-blue-600 rounded-lg"></div>
@@ -23,6 +24,7 @@ export const AboutUs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: -100 }}
               transition={{ duration: 1.5 }}
+              viewport={{ once: true }}
               className="font-medium mt-5 text-lg"
             >
               {item.title}
@@ -30,6 +32,7 @@ export const AboutUs = () => {
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
+              viewport={{ once: true }}
               transition={{ duration: 1.5 }}
               className="w-full lg:w-[30rem]"
             >
@@ -39,6 +42,7 @@ export const AboutUs = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1.5 }}
+              viewport={{ once: true }}
               className="text-center"
             >
               <p>{item.description}</p>

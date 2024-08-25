@@ -21,32 +21,32 @@ export const Navbar = () => {
           >
             {/* <!-- Menu open: "hidden", Menu closed: "block" --> */}
             <svg
-              className="block w-6 h-6"
+              className={`${isVisible ? "hidden" : "block"} w-6 h-6`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M4 8h16M4 16h16"
               />
             </svg>
 
             {/* <!-- Menu open: "block", Menu closed: "hidden" --> */}
             <svg
-              className="hidden w-6 h-6"
+              className={`${isVisible ? "block" : "hidden"} w-6 h-6`}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
               />
             </svg>
@@ -56,10 +56,8 @@ export const Navbar = () => {
             <a
               href="#service"
               title=""
-              onClick={() => setIsVisible(!isVisible)}
               className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
             >
-              {" "}
               Serviços
             </a>
             <a
@@ -90,12 +88,13 @@ export const Navbar = () => {
 
         {/* <!-- xs to lg --> */}
         {isVisible && (
-          <nav className="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+          <nav className="pt-4 pb-4 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
             <div className="flow-root">
               <div className="flex flex-col px-6 -my-2 space-y-1">
                 <a
                   href="#service"
                   title=""
+                  onClick={() => setIsVisible(false)}
                   className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   Serviços
@@ -104,6 +103,7 @@ export const Navbar = () => {
                 <a
                   href="#"
                   title=""
+                  onClick={() => setIsVisible(false)}
                   className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   Preços
@@ -112,6 +112,7 @@ export const Navbar = () => {
                 <a
                   href="#"
                   title=""
+                  onClick={() => setIsVisible(false)}
                   className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   Sobre nós
@@ -120,6 +121,7 @@ export const Navbar = () => {
                 <a
                   href="#"
                   title=""
+                  onClick={() => setIsVisible(false)}
                   className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   Contactos

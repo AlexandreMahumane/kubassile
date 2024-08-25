@@ -34,6 +34,7 @@ export const Carousel = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
             className="text-2xl font-bold  text-white"
           >
             Kubassile Serviços LDA
@@ -42,6 +43,7 @@ export const Carousel = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1 }}
+            viewport={{ once: true }}
             className="mt-2  text-xl text-white"
           >
             Kubassile Serviços LDA é uma empresa de limpeza geral de altissima
@@ -51,6 +53,7 @@ export const Carousel = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -100 }}
             transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
             className="space-x-5 flex flex-wrap text-lg  justify-center w-full text-white"
           >
             <a

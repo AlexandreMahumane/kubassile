@@ -10,7 +10,7 @@ function App() {
     <>
       <Navbar />
       <Carousel />
-      <div className="max-w-7xl mb-[33rem] lg:mb-64 mr-auto ml-auto">
+      <div className="max-w-7xl  mx-auto">
         {" "}
         <Service />
         <AboutUs />

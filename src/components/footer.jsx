@@ -4,7 +4,7 @@ export const Footer = () => {
       <div className="max-w-7xl border-b ml-auto mr-auto w-full flex-col lg:flex-row flex justify-between">
         <div>
           <div>
-            <a href="#" className="underline">
+            <a href="" className="underline">
               Kubassile
             </a>
           </div>

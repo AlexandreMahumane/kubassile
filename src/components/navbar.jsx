@@ -9,8 +9,8 @@ export const Navbar = () => {
         {/* <!-- lg+ --> */}
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
-            <a href="#" title="" className="flex">
-              <h1>KUBASSILE</h1>
+            <a href="" title="" className="flex">
+              <h1 className="font-bold">KUBASSILE</h1>
             </a>
           </div>
 
@@ -60,16 +60,9 @@ export const Navbar = () => {
             >
               Serviços
             </a>
-            <a
-              href="#"
-              title=""
-              className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-            >
-              Preços
-            </a>
 
             <a
-              href="#"
+              href="#aboutUs"
               title=""
               className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
             >
@@ -77,7 +70,7 @@ export const Navbar = () => {
             </a>
 
             <a
-              href="#"
+              href="#contacts"
               title=""
               className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
             >
@@ -101,16 +94,7 @@ export const Navbar = () => {
                 </a>
 
                 <a
-                  href="#"
-                  title=""
-                  onClick={() => setIsVisible(false)}
-                  className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-                >
-                  Preços
-                </a>
-
-                <a
-                  href="#"
+                  href="#aboutUs"
                   title=""
                   onClick={() => setIsVisible(false)}
                   className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
@@ -119,7 +103,7 @@ export const Navbar = () => {
                 </a>
 
                 <a
-                  href="#"
+                  href="#contacts"
                   title=""
                   onClick={() => setIsVisible(false)}
                   className="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"

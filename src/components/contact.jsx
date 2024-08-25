@@ -3,17 +3,20 @@ import { motion } from "framer-motion";
 export const Contact = () => {
   return (
     <div className="mt-10">
-      <div className="flex flex-col text-2xl  items-center w-full">
+      <div className="flex flex-col text-2xl items-center w-full">
         <motion.div
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
         >
-          <h2 className="font-semibold">Contactos</h2>
+          <h2 id="contacts" className="font-semibold">
+            Contactos
+          </h2>
           <div className="border-4 w-14 border-blue-600 rounded-lg"></div>
         </motion.div>
       </div>
-      <section id="contacts" className="py-24 h-[35rem] px-4 sm:px-6 lg:px-8">
+      <section className="py-24 mt-[-2rem] px-4 sm:px-6 lg:px-8">
         {/* <div className="mx-auto max-w-7xl "> */}
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className="lg:mb-0 mb-10">
@@ -24,9 +27,7 @@ export const Contact = () => {
                   alt="ContactUs  section"
                   className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-blue-700"
                 />
-                <h1 className=" text-blue-500 text-4xl font-bold leading-10 absolute top-11 left-11">
-                  Contacte nos
-                </h1>
+
                 <div className="absolute bottom-0 w-full lg:p-11 p-5">
                   <div className="bg-white rounded-lg p-6 block">
                     <a href="javascript:;" className="flex items-center mb-6">
